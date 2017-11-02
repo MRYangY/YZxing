@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/YZxing.iml" filepath="$PROJECT_DIR$/YZxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YZxing-lib/YZxing-lib.iml" filepath="$PROJECT_DIR$/YZxing-lib/YZxing-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/qrcode/qrcode.iml" filepath="$PROJECT_DIR$/qrcode/qrcode.iml" />
     </modules>
   </component>
 </project>

@@ -1,1 +1,1 @@
-include ':app', ':qrcode'
+include ':app', ':YZxing-lib'
