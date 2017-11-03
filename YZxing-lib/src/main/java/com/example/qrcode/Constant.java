@@ -19,4 +19,7 @@ public class Constant {
     public static final String EXTRA_SCANNER_FRAME_HEIGHT = "scan_frame_height";
     public static final String EXTRA_SCANNER_FRAME_TOP_PADDING = "scan_frame_top_padding";
     public static final String EXTRA_SCAN_CODE_TYPE = "scan_code_type";
+
+    public static final String EXTRA_RESULT_CODE_TYPE = "result_code_type";
+    public static final String EXTRA_RESULT_CONTENT = "result_content";
 }

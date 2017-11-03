@@ -1,8 +1,6 @@
 package com.example.qrcode;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -27,6 +25,7 @@ import java.util.Collection;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Set;
+
 
 /**
  * Created by yangyu on 17/10/18.
@@ -192,17 +191,24 @@ public class ScannerActivity extends Activity implements SurfaceHolder.Callback 
     public void handDecode(final Result result) {
         mInactivityTimer.onActivity();
         beepManager.playBeepSoundAndVibrate();
-        AlertDialog.Builder mScannerDialogBuilder = new AlertDialog.Builder(this);
-        mScannerDialogBuilder.setMessage("codeType:" + result.getBarcodeFormat() + "-----content:" + result.getText());
-        mScannerDialogBuilder.setCancelable(false);
-        mScannerDialogBuilder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                ScannerActivity.this.finish();
-            }
-        });
-        mScannerDialogBuilder.create().show();
+//        AlertDialog.Builder mScannerDialogBuilder = new AlertDialog.Builder(this);
+//        mScannerDialogBuilder.setMessage("codeType:" + result.getBarcodeFormat() + "-----content:" + result.getText());
+//        mScannerDialogBuilder.setCancelable(false);
+//        mScannerDialogBuilder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                dialog.dismiss();
+//                ScannerActivity.this.finish();
+//            }
+//        });
+//        mScannerDialogBuilder.create().show();
+        Intent data = new Intent();
+        BarcodeFormat format = result.getBarcodeFormat();
+        String type = format.toString();
+        data.putExtra(Constant.EXTRA_RESULT_CODE_TYPE, type);
+        data.putExtra(Constant.EXTRA_RESULT_CONTENT, result.getText());
+        setResult(RESULT_OK, data);
+        finish();
     }
 
     public CameraManager getCameraManager() {
