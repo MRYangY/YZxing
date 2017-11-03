@@ -1,9 +1,14 @@
 # YZxing
 一款仿微信扫一扫界面，基于zxing实现的扫码库。  
 ### **实现效果** ###  
-![image](https://github.com/MRYangY/YZxing/blob/master/app/src/main/res/drawable-xhdpi/Screenshot_2017-11-03-14-38-37-022_com.example.yz_meitu_2.png)![image](https://github.com/MRYangY/YZxing/blob/master/app/src/main/res/drawable-xhdpi/Screenshot_2017-11-03-13-51-26-886_com.example.yz_meitu_1.png)  
-### **使用方式** ###
-首先将YZxing-lib库添加到项目中。然后在点击跳转到扫码界面的点击事件中，调用如下方法：  
+![image](https://github.com/MRYangY/YZxing/blob/master/app/src/main/res/drawable-xhdpi/screenshot_2.png) ![image](https://github.com/MRYangY/YZxing/blob/master/app/src/main/res/drawable-xhdpi/screenshot_1.png)  
+
+### **使用方式** ###  
+  
+首先通过在build.gradle文件中添加如下编译语句将YZxing-lib库添加到项目中。  
+  compile 'com.yangy:YZxing-lib:1.1'  
+（或者在直接把本仓库里面的YZxing库下载下来，添加到项目中。）  
+然后在点击跳转到扫码界面的点击事件中，调用如下方法：  
  Intent intent = new Intent(this, ScannerActivity.class);  
         //这里可以用intent传递一些参数，比如扫码聚焦框尺寸大小，支持的扫码类型。  
 //        //设置扫码框的宽  
@@ -50,5 +55,7 @@
         
         super.onActivityResult(requestCode, resultCode, data);  
         
-    }
+    }  
+## **觉得还不错的就动动手指给个star吧(*^__^*)** ##
+   
 
