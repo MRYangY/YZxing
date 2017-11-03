@@ -7,7 +7,7 @@ def gitUrl = 'https://github.com/MRYangY/YZxing.git'   // Git仓库的url
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-version = "1.0" //发布版本号
+version = "1.1" //发布版本号
 group = "com.yangy" //最终引用形式，如compile 'com.yangy.lfilepicker:1.0.0'，其中lfilepicker在后面配置
 android {
     compileSdkVersion 26
@@ -53,10 +53,10 @@ bintray {
         publish = true // 是否是公开项目，公开别人可以引用
 
         version {
-            name = '1.0'
+            name = '1.1'
             desc = '基于zxing的扫码库，样式类似于微信扫一扫'//描述，自己定义
             released  = new Date()
-            vcsTag = 'v1.0'
+            vcsTag = 'v1.1'
             attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
         }
     }
