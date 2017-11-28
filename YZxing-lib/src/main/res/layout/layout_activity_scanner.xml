@@ -9,9 +9,10 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:navigationIcon="@drawable/ic_arrow_back_white_24dp">
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        app:popupTheme="@style/ToolbarPopupTheme">
 
     </android.support.v7.widget.Toolbar>
 
@@ -20,16 +21,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/tool_bar"
-        android:layout_centerInParent="true"
-        />
+        android:layout_centerInParent="true" />
 
     <com.example.qrcode.view.ScannerView
         android:id="@+id/scan_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/tool_bar"
-        android:layout_centerInParent="true"
-        />
+        android:layout_centerInParent="true" />
 
 
 </RelativeLayout>
