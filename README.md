@@ -5,8 +5,8 @@
 
 ### **使用方式** ###  
   
-首先通过在build.gradle文件中添加如下编译语句将YZxing-lib库添加到项目中。  
-  compile 'com.yangy:YZxing-lib:1.1'  
+~~首先通过在build.gradle文件中添加如下编译语句将YZxing-lib库添加到项目中。  
+  compile 'com.yangy:YZxing-lib:1.1'~~
 （或者在直接把本仓库里面的YZxing库下载下来，添加到项目中。）  
 然后在点击跳转到扫码界面的点击事件中，调用如下方法：  
  Intent intent = new Intent(this, ScannerActivity.class);  
@@ -56,6 +56,27 @@
         super.onActivityResult(requestCode, resultCode, data);  
         
     }  
+     
+     
+----------------------------------------  
+     
+##**YZxing版本更新说明**##  
+     
+   目前YZxing已经更新到了v2.1  ，更新内容有：  
+     1.修改空指针导致的的闪退bug。  
+     2.添加从相册获取二维码功能（用户可以选择是否使用该功能）。  
+     
+     
+        
+      首先通过在build.gradle文件中添加如下编译语句将YZxing-lib库添加到项目中。  
+  compile 'com.yangy:YZxing-lib:2.1'  
+（或者在直接把本仓库里面的YZxing库下载下来，添加到项目中。）   
+
+     使用方式与1.1版本一致，注意的是如需使用**从相册获取二维码功能**则需要在intent中添加是否启用scan_from_pic，默认是FALSE：  
+     **//        //设置是否启用从相册获取二维码。  
+     
+//        intent.putExtra(Constant.EXTRA_IS_ENABLE_SCAN_FROM_PIC,true);**  
+
 ## **觉得还不错的就动动手指给个star吧(*^__^*)** ##
    
 
