@@ -60,7 +60,9 @@
      
 ----------------------------------------  
      
-##**YZxing版本更新说明**##  
+     
+     
+## **YZxing版本更新说明** ##  
      
    目前YZxing已经更新到了v2.1  ，更新内容有：  
      1.修改空指针导致的的闪退bug。  
@@ -75,7 +77,12 @@
      使用方式与1.1版本一致，注意的是如需使用**从相册获取二维码功能**则需要在intent中添加是否启用scan_from_pic，默认是FALSE：  
      **//        //设置是否启用从相册获取二维码。  
      
-//        intent.putExtra(Constant.EXTRA_IS_ENABLE_SCAN_FROM_PIC,true);**  
+//        intent.putExtra(Constant.EXTRA_IS_ENABLE_SCAN_FROM_PIC,true);**     
+  
+### **从照片获取二维码的效果如下：** ### 
+
+![image](https://github.com/MRYangY/YZxing/blob/master/app/src/main/res/effect-picture/scan_form_pic_%20effect.gif)
+
 
 ## **觉得还不错的就动动手指给个star吧(*^__^*)** ##
    
