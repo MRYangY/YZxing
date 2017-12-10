@@ -157,6 +157,7 @@ public class ScannerActivity extends AppCompatActivity implements SurfaceHolder.
 
     @Override
     protected void onDestroy() {
+        cameraManager.clearFramingRect();
         mInactivityTimer.shutdown();
         super.onDestroy();
     }
@@ -258,12 +259,11 @@ public class ScannerActivity extends AppCompatActivity implements SurfaceHolder.
 
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-        hasSurface = false;
     }
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
-
+        hasSurface = false;
     }
 
     //在这里处理扫码结果
