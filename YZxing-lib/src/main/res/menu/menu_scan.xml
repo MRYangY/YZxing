@@ -4,6 +4,9 @@
     <item
         android:id="@+id/scan_from_picture"
         android:title="从相册选取二维码"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/encode_barcode"
+        android:title="生成条形码"
+        app:showAsAction="never" />
 </menu>

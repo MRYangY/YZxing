@@ -16,6 +16,8 @@
             />
         <activity android:name=".ShowResultActivity"
             android:theme="@style/MyAppTheme"/>
+        <activity android:name=".BarcodeActivity"
+            android:theme="@style/MyAppTheme"/>
     </application>
 
 </manifest>

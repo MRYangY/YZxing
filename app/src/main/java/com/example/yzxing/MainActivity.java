@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 //        //设置扫码框距顶部的位置
 //        intent.putExtra(Constant.EXTRA_SCANNER_FRAME_TOP_PADDING, 100);
 //        //设置是否启用从相册获取二维码。
-//        intent.putExtra(Constant.EXTRA_IS_ENABLE_SCAN_FROM_PIC,true);
+        intent.putExtra(Constant.EXTRA_IS_ENABLE_SCAN_FROM_PIC,true);
 //        Bundle bundle = new Bundle();
 //        //设置支持的扫码类型
 //        bundle.putSerializable(Constant.EXTRA_SCAN_CODE_TYPE, mHashMap);
